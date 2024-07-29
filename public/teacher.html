@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-head">
+        <div class="logo">
+          <div class="btn-container">
+            <button class="btn sheen btnsidebar">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+          <a href="#">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <!-- <img src="./images/teacherbg.jpg" alt="teacher" height="20px"> -->
+            <h2>Portal</h2>
+          </a>
+        </div>
+        <div class="top">
+          <div class="btn-container btn-class">
+            <button class="btn">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <div class="profile-logo" style="border-radius: 50% 50%;">
+            <div
+              style="
+                height: 1.8em;
+                width: 2em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50% 50%;
+              "
+            >
+              <!-- <h4 style="margin: 0; padding: 0">G</h4> -->
+            </div>
+            <!-- <img style="height: 1.7em;width: 1.7em;" src="" alt="" /> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- nav end-->
+    <!-- sidebar-->
+    <div class="sidebar-container">
+      <div class="sidebar">
+        <div class="menu" style="padding: 2em">
+          <h4>Menu</h4>
+        </div>
+        <a href="#"><i class="fa-solid fa-plus"></i> Link</a>
+        <a href="#"><i class="fa-solid fa-plus"></i> Link</a>
+        <a href="#"><i class="fa-solid fa-plus"></i> Link</a>
+        <a href="#"><i class="fa-solid fa-plus"></i> Link</a>
+        <a href="#"><i class="fa-solid fa-plus"></i> Link</a>
+      </div>
+    </div>
+    <!-- sidebar end-->
+    <!-- create class -->
+    <div class="class-container">
+      <div class="create-class">
+        <form class="form contact-form">
+          <div class="btn-container">
+            <button type="button" class="btn close">
+              x
+              <!-- <i class="fa-solid fa-plus"></i> -->
+            </button>
+          </div>
+          <h4 style="padding: 0.5em 0; text-align: center">Create Class</h4>
+          <div class="form-row">
+            <label for="name" class="form-label"> *Class Name : </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-input"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="course" class="form-label"> *Course : </label>
+            <input
+              type="text"
+              name="course"
+              id="course"
+              class="form-input"
+              required
+            />
+          </div>
+          <button type="submit" id="class-submit" class="btn btn-block">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- create class end-->
+    <!-- main start -->
+    <div class="main-container">
+      <div class="main" style="padding-top: 1em">
+      </div>
+    </div>
+    <!-- main end -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./sidebar.js"></script>
+    <script src="./class-form.js"></script>
+    <script src="./create-class.js"></script>
+    <script src="./get-classes.js"></script>
+  </body>
+</html>

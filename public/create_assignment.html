@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="formstyle.css">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Assignment</title>
+    
+</head>
+
+<body>
+    <form id="assignmentForm">
+        <h3>Create New Assignment</h3>
+        <label for="assignmentTitle">Title:</label>
+        <input type="text" id="assignmentTitle" name="assignmentTitle" required>
+
+        <label for="assignmentContent">Content:</label>
+        <textarea id="assignmentContent" name="assignmentContent" rows="4" required></textarea>
+
+        <label for="DueDate">Due date:</label>
+        <input type="text" id="DueDate" name="DueDate" value="05-12-23(midnight)" readonly>
+
+        <button type="button" onclick="submitAssignment()">Submit Assignment</button>
+    </form>
+
+    <script>
+        function submitAssignment() {
+            const title = document.getElementById("assignmentTitle").value;
+            const content = document.getElementById("assignmentContent").value;
+            const classId = document.getElementById("DueDate").value;
+
+            console.log("Title:", title);
+            console.log("Content:", content);
+            console.log("DueDate:", DueDate);
+
+           
+
+            document.getElementById("assignmentForm").reset();
+        }
+    </script>
+</body>
+
+</html>
+

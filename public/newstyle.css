@@ -1,0 +1,110 @@
+ body {
+    font-family: sans-serif;
+    background: linear-gradient(135deg, #e58fdb, #caea56);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(135deg, #9c07ff, #567fea);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+nav {
+    float: right;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+nav a:hover {
+    color: rgb(223, 56, 0);
+    font-size: 1.20rem;
+}
+
+main {
+    padding: 20px;
+}
+
+.section {
+    border-bottom: 1px solid #CCC;
+    padding: 20px 0;
+}
+
+.section h2 {
+    font-size: 24px;
+}
+
+.upcoming {
+    background-color: #57cf07;
+    background-image: url('https://i.pinimg.com/originals/5b/65/a9/5b65a951f8ec91380406f253159ff065.jpg');
+    height: 25vh;
+    border-radius: 20px;
+    color: #EFEFEF;
+    font-size: x-large;
+    font-weight: 800;
+    padding: 15vh;
+    margin-bottom: 10vh;
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.subject-box {
+    background-color: #EFEFEF;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.subject-box:hover {
+    background-color: #0b70eb;
+}
+
+.subject-box:nth-child(3n+1) {
+    background-color: #FFC0CB;
+}
+
+.subject-box:nth-child(3n+2) {
+    background-color: #87CEEB;
+}
+
+.subject-box:nth-child(3n+3) {
+    background-color: #98FB98;
+}
+
+.subject-box a {
+    color: #333;
+}
+
+
+.student-comments {
+    padding: 10px;
+}
+
+
+.student-comments textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}

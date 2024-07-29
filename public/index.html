@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer
+        {
+            position: absolute;
+            top:  50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .role{
+            display:inline-block;
+            margin:8px;
+            border:1px solid black;
+            border-radius: 5px;
+        }
+        h1{
+            text-align: center;
+            margin-top: 10%;
+        }
+        .belowimg
+        {
+            background-color: #4CAF50;
+            margin-bottom: 0%;
+            width: 100%;
+            color: white;
+            text-align: center;
+            font-size: larger;
+        }
+        .role:hover
+        {
+            background-color: #4CAF50;
+        }
+    </style>
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>SELECT YOUR ROLE</h1>
+    <div class="outer">
+    <div class="role" role="button" id="teacher">
+        <img src="images/icons8-female-teacher-96.png">
+        <div class="belowimg">Teacher</div></div>
+    <div class="role" role="button" id="student">
+        <img src="images/icons8-student-96.png">
+        <div class="belowimg">Student</div>
+    </div>
+    </div>
+    <script src="role_select.js"></script>
+</body>
+</html>
